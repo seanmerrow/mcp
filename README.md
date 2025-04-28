@@ -8,7 +8,7 @@ toolbox enter
 ```
 Use the unofficial port of [claude-desktop-fedora.](https://github.com/bsneed/claude-desktop-fedora). Thank you to the maintainer of that project!!
 
-NOTE: I had to additionally install sqlite3, nss, atk, at-spi2-atk and gtk3. 
+NOTE: I had to manually install nodejs, sqlite3, nss, atk, at-spi2-atk and gtk3 into the toolbox. This may not be required if you are running directly in your Fedora Workstation environment, and not in a toolbox, as the default Workstation includes these.
 ```
 # In the toolbox, install sqlite3, nodejs and a few other packages
 sudo dnf install -y sqlite3 nodejs \
