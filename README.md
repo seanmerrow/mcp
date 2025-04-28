@@ -6,11 +6,9 @@ On a Fedora Workstation, we'll use a toolbox to isolate our playground.
 toolbox create
 toolbox enter
 ```
-Use the unofficial port of [claude-desktop-fedora.](https://github.com/bsneed/claude-desktop-fedora). Thank you to the maintainer of that project!!
-
-NOTE: I had to manually install nodejs, sqlite3, nss, atk, at-spi2-atk and gtk3 into the toolbox. This may not be required if you are running directly in your Fedora Workstation environment, and not in a toolbox, as the default Workstation includes these.
+The following steps follow those from the [claude-desktop-fedora.](https://github.com/bsneed/claude-desktop-fedora) project. Thank you to the creator/maintainer!!
 ```
-# In the toolbox, install sqlite3, nodejs and a few other packages
+# Install the following dependencies if they aren't already installed
 sudo dnf install -y sqlite3 nodejs \
     nss atk at-spi2-atk gtk3
 
